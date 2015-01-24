@@ -81,6 +81,23 @@ $('#divideButton').click(function(){
 Select and Copy the addition code (ctrl+c) and paste it here (ctrl+v).
 Go through and change add to subtract everywhere. Also, change the plus sign to a minus sign.
 
+<h2>Basic subtraction</h2>
+<input value="44" id="add1">
+plus
+<input value="2" id="add2">
+<input type="button" value="equals" id="addButton">
+<span id="addResult"></span>
+<script>
+$('#addButton').click(function(){
+  // Get numbers from the two boxes.
+  var minus1 = Number($('#add1').val());
+  var minus2 = Number($('#add2').val());
+  // Add the two numbers together and store them as result.
+  var result = minus1 - minus2;
+  // Show the result.
+  $('#addResult').text(result)
+})
+</script>
 
 
 
