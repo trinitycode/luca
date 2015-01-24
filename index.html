@@ -16,11 +16,11 @@ a {
 <a href="https://github.com/trinitycode" target="_blank">Edit code here</a>
 <a href="javascript:void(location.href = location.pathname + '?' + new Date() * 1)">Reload</a>
 
-<h1>Calculator</h1>
+<h1>Calculators</h1>
 
 
 <h2>Basic addition</h2>
-<input value="1" id="add1">
+<input value="44" id="add1">
 plus
 <input value="2" id="add2">
 <input type="button" value="equals" id="addButton">
@@ -70,7 +70,8 @@ $('#divideButton').click(function(){
   var divide2 = Number($('#divide2').val());
   // Divide the two numbers together. Slash / means divide.
   // Write the division code yourself.
-  var result = 
+  
+  var result = divide1/divide2;
   $('#divideResult').text(result)
 })
 </script>
